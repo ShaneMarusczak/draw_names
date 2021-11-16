@@ -4,7 +4,7 @@ use std::io;
 fn main() {
     let mut names = Vec::<String>::new();
 
-    println!("Draws one or more random names from a list!");
+    println!("\nDraws one or more random names from a list!");
     println!("Enter one name at a time.");
     println!("Enter \"DONE\" when complete.");
 
@@ -25,7 +25,7 @@ fn main() {
     let mut winner_count_str = String::new();
     let mut winner_count_num: usize = 0;
     while winner_count_num == 0 || winner_count_num > names_len {
-        println!("How many names would you like to draw?");
+        println!("\nHow many names would you like to draw?");
 
         io::stdin()
             .read_line(&mut winner_count_str)
@@ -36,14 +36,16 @@ fn main() {
         };
         if winner_count_num == 0 || winner_count_num > names_len {
             winner_count_str.clear();
-            println!("Invalid Input");
+            colour::red_ln!("\nInvalid Input");
         }
     }
 
     let mut rng = thread_rng();
     let mut choices: Vec<usize> = (0..names_len).collect();
     choices.shuffle(&mut rng);
+    println!("");
     for num in 0..winner_count_num {
-        println!("{}", names[choices[num]]);
+        colour::cyan_ln!("{}", names[choices[num]]);
     }
+    println!("");
 }
