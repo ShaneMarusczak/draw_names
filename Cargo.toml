@@ -1,5 +1,5 @@
 [package]
-name = "draw_names_from_hat"
+name = "draw_names"
 version = "0.1.0"
 edition = "2021"
 
