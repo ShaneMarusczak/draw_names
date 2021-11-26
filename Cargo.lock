@@ -54,6 +54,7 @@ version = "0.1.0"
 dependencies = [
  "colour",
  "rand",
+ "to_int_and_back",
 ]
 
 [[package]]
@@ -248,6 +249,11 @@ name = "smallvec"
 version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1ecab6c735a6bb4139c0caafd0cc3635748bbb3acf4550e8138122099251f309"
+
+[[package]]
+name = "to_int_and_back"
+version = "0.1.0"
+source = "git+https://github.com/ShaneMarusczak/to_int_and_back#9ba562f6233509e73abebc03284157bbd6d7a239"
 
 [[package]]
 name = "wasi"
