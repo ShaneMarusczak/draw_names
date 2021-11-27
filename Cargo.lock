@@ -85,9 +85,9 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
 name = "libc"
-version = "0.2.107"
+version = "0.2.108"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fbe5e23404da5b4f555ef85ebed98fb4083e55a00c317800bc2a50ede9f3d219"
+checksum = "8521a1b57e76b1ec69af7599e75e38e7b7fad6610f037db8c79b127201b5d119"
 
 [[package]]
 name = "lock_api"
@@ -253,7 +253,7 @@ checksum = "1ecab6c735a6bb4139c0caafd0cc3635748bbb3acf4550e8138122099251f309"
 [[package]]
 name = "to_int_and_back"
 version = "0.1.0"
-source = "git+https://github.com/ShaneMarusczak/to_int_and_back#9ba562f6233509e73abebc03284157bbd6d7a239"
+source = "git+https://github.com/ShaneMarusczak/to_int_and_back#8f03516e1018c699fb6a29e5fc99febd2535d8fd"
 
 [[package]]
 name = "wasi"
